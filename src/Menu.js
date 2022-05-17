@@ -10,6 +10,8 @@ const Menu = (props) => {
             <MenuItem menuItem={props.menu[1]}/>
             <MenuItem menuItem={props.menu[2]}/>
             <MenuItem menuItem={props.menu[3]}/>
+            <hr/>
+            {props.menu.map(el => <MenuItem menuItem={el}/>)}
         </div>
     );
 };
